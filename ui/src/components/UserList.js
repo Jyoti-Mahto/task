@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const UserList = ({ onEdit }) => {
+const UserList = ({ onEdit, props }) => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -15,14 +15,30 @@ const UserList = ({ onEdit }) => {
   return (
     <div>
       <h2>User List</h2>
-      <ul>
-        {users.map(user => (
-          <li key={user.id} class={user.id}>
-            {user.name} - {user.city} - {user.mobile} - {user.mediaUrl}
-            <button onClick={() => onEdit(user.id)}>Edit</button>
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Mobile</th>
+            <th>Media URL</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id} className={user.id}>
+              <td>{user.name}</td>
+              <td>{user.city}</td>
+              <td>{user.mobile}</td>
+              <td>{user.mediaUrl}</td>
+              <td>
+                <button onClick={() => onEdit(user.id)}>Edit</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
