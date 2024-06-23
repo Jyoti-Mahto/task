@@ -97,45 +97,9 @@ To get a local copy up and running follow these simple steps.
 ## Screenshots
 
 Include screenshots of your application here to provide a visual representation.
+<img width="947" alt="image" src="https://github.com/Jyoti-Mahto/task/assets/85436815/a393c214-de14-4b9f-89b1-94ff15071057">
+<img width="946" alt="image" src="https://github.com/Jyoti-Mahto/task/assets/85436815/8338ed9c-fd34-4daa-bc49-ae63876ce62b">
+
+
 
 ---
-
-## API Documentation
-
-For detailed API documentation, refer to the [Node.js backend README](link-to-backend-readme) for endpoints, request formats, and responses.
-
----
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@example.com
-
-Project Link: [https://github.com/your_username/your_project](https://github.com/your_username/your_project)
-
----
-
-## Acknowledgements
-
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [Axios Documentation](https://axios-http.com/docs/intro)
-- [Bootstrap Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- Inspiration: Mention any sources or inspirations if applicable.
