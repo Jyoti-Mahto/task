@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import UserList from './UserList';
 
 const UserForm = ({ userId, onSave }) => {
   const [name, setName] = useState('');
@@ -18,6 +17,12 @@ const UserForm = ({ userId, onSave }) => {
           setMediaUrl(response.data.mediaUrl);
         })
         .catch(error => console.error('Error fetching user:', error));
+    } else {
+      // Clear the form if not editing
+      setName('');
+      setCity('');
+      setMobile('');
+      setMediaUrl('');
     }
   }, [userId]);
 
@@ -28,7 +33,6 @@ const UserForm = ({ userId, onSave }) => {
     if (userId) {
       axios.patch(`http://localhost:3000/user/${userId}`, user)
         .then(response => {
-          <UserList />
           onSave();
         })
         .catch(error => console.error('Error updating user:', error));
@@ -36,7 +40,6 @@ const UserForm = ({ userId, onSave }) => {
       axios.post('http://localhost:3000/user', user)
         .then(response => {
           onSave();
-          
         })
         .catch(error => console.error('Error adding user:', error));
     }
