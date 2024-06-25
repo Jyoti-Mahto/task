@@ -35,7 +35,7 @@ This project implements a front-end application using React.js to interact with 
 - **Back-end (for API):**
   - Node.js
   - Express.js
-  - PostgreSQL or MySQL (for database)
+  - mongodb(for database)
   - CryptoJS (for encryption, if needed)
 
 ---
