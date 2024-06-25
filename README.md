@@ -29,14 +29,12 @@ This project implements a front-end application using React.js to interact with 
   - React.js
   - React Router (for navigation)
   - Axios (for API calls)
-  - Bootstrap or Material-UI (for styling, choose one)
-  - React Hooks (for state management)
+  - Bootstrap or Material-UI 
 
 - **Back-end (for API):**
   - Node.js
   - Express.js
   - mongodb(for database)
-  - CryptoJS (for encryption, if needed)
 
 ---
 
