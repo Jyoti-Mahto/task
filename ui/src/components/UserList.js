@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserList = ({ onEdit, users }) => {
+const UserList = ({ onEdit, onDelete, users }) => {
   return (
     <div>
       <h2>User List</h2>
@@ -23,6 +23,7 @@ const UserList = ({ onEdit, users }) => {
               <td>{user.mediaUrl}</td>
               <td>
                 <button onClick={() => onEdit(user.id)}>Edit</button>
+                <button onClick={() => onDelete(user.id)}>Delete</button>
               </td>
             </tr>
           ))}

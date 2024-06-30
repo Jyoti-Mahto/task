@@ -5,6 +5,7 @@ import { createUser } from './handlers/user/post.js'
 import { listUsers } from './handlers/user/list.js'
 import { getUser } from './handlers/user/get.js'
 import { updateUser } from './handlers/user/patch.js'
+import { deleteUser } from './handlers/user/delete.js'
 import cors  from 'cors'
 import mongoose from 'mongoose'
 
@@ -12,7 +13,7 @@ const app = express()
 app.use(express.json())
 app.use(cors({
     origin: "http://localhost:3001",
-    methods: ["GET", "POST", "PATCH"]
+    methods: ["GET", "POST", "PATCH", "DELETE", "PUT"]
 }))
   
 const uri = 'mongodb://localhost:27017/CRUD'
@@ -22,6 +23,7 @@ mongoose.connect(uri)
 
 app.post('/user', createUser)
 app.get('/users', listUsers)
+app.delete('/user/:id', deleteUser)
 app.get('/user/:id', getUser)
 app.patch('/user/:id', updateUser)
 app.post('/city', addCity)
